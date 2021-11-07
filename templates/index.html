@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Crop Recommendation</title>
+  </head>
+  <body>
+    <section>
+      <form action="/" method="post" class="features-form">
+        <h1>Crop Recommendation</h1>
+        <label for="feature1">Ratio of Nitrogen content in soil:</label>
+        <input type="number" name="feature1" id="" step="any" required />
+        <label for="feature2">Ratio of Phosphorous content in soil:</label>
+        <input type="number" name="feature2" id="" step="any" required />
+        <label for="feature3">Ratio of Potassium content in soil:</label>
+        <input type="number" name="feature3" id="" step="any" required />
+        <label for="feature4">Temperature in degree Celsius:</label>
+        <input type="number" name="feature4" id="" step="any" required />
+        <label for="feature5">Relative humidity in %:</label>
+        <input type="number" name="feature5" id="" step="any" required />
+        <label for="feature6">ph value of the soil:</label>
+        <input type="number" name="feature6" id="" step="any" required />
+        <label for="feature7">Rainfall in mm:</label>
+        <input type="number" name="feature7" id="" step="any" required />
+        <input type="submit" value="Submit" />
+        <h1 class="prediction mobile-prediction">You should plant : {{prediction}}</h1>
+      </form>
+      <div class="side-text">
+        <h1>Factors affecting crop growth</h1>
+        <p>
+          There are four primary factors that affect plant growth: light, water,
+          temperature and nutrients. These four elements affect the plant's
+          growth hormones, making the plant grow more quickly or more slowly.
+          Changing any of the four can cause the plant stress which stunts or
+          changes growth, or improves growth. It's important to learn as much as
+          you can about each of the four factors and your own plant or garden's
+          unique needs to maximize plant growth factors for a lush, healthy
+          garden.
+          <br /><br />
+          <b>We will help you</b> decide what crop to plant based on the
+          nutrients in your land's soil, its ph, temperature, humidity, and
+          rainfall
+          <h1 class="prediction desktop-prediction">You should plant : <span>{{prediction}}</span></h1>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
